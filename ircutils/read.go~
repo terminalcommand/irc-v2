@@ -1,0 +1,19 @@
+package ircutils
+
+import (
+	"net"
+	"bufio"
+)
+
+func ReadLine(conn net.Conn) (string, error) {
+	reader := bufio.NewReader(conn)
+	line, err := reader.ReadString('\n') // This is not correct, it should look for \r\n
+//	next ,err := reader.Peek(1)
+//	for next[0] != byte('\n') {
+//		temp, _ := reader.ReadString('\r')
+//		line += temp
+//		next ,err = reader.Peek(1)
+//	}
+
+	return line, err
+}

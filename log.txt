@@ -1,0 +1,41 @@
+:tolkien.freenode.net NOTICE * :*** Looking up your hostname...
+:tolkien.freenode.net NOTICE * :*** Checking Ident
+:tolkien.freenode.net NOTICE * :*** Couldn't look up your hostname
+:tolkien.freenode.net NOTICE * :*** No Ident response
+:tolkien.freenode.net 001 terminaltest :Welcome to the freenode Internet Relay Chat Network terminaltest
+:tolkien.freenode.net 002 terminaltest :Your host is tolkien.freenode.net[71.11.84.232/6667], running version ircd-seven-1.1.4
+u
+:verne.freenode.net NOTICE * :*** Looking up your hostname...
+:verne.freenode.net NOTICE * :*** Checking Ident
+:verne.freenode.net NOTICE * :*** No Ident response
+:verne.freenode.net 001 terminaltest :Welcome to the freenode Internet Relay Chat Network terminaltest
+:verne.freenode.net 002 terminaltest :Your host is verne.freenode.net[185.30.166.37/6667], running version ircd-seven-1.1.4
+st :- If you are looking for assistance, you will be able to find a list of
+e predominantly
+:verne.freenode.net 421 terminaltest a :Unknown command
+PING :verne.freenode.net
+:terminaltest!~terminalt@94.54.226.30 QUIT :Ping timeout: 260 seconds
+ERROR :Closing Link: 94.54.226.30 (Ping timeout: 260 seconds)
+:verne.freenode.net NOTICE * :*** Looking up your hostname...:verne.freenode.net NOTICE * :*** Checking Ident:verne.freenode.net NOTICE * :*** No Ident response:verne.freenode.net 001 terminaltest :Welcome to the freenode Internet Relay Chat Network terminaltest:verne.freenode.net 002 terminaltest :Your host is verne.freenode.net[185.30.166.37/6667], running version ircd-seven-1.1.4st :- If you are looking for assistance, you will be able to find a list ofenode.net 372 terminaltest :- thanks to the attendees, exhibitors and speakers who made freenode #live 2017:hitchcock.freenode.net NOTICE * :*** Looking up your hostname...
+:cherryh.freenode.net NOTICE * :*** Looking up your hostname...:cherryh.freenode.net NOTICE * :*** Checking Ident:cherryh.freenode.net NOTICE * :*** Couldn't look up your hostname:cherryh.freenode.net NOTICE * :*** No Ident response:cherryh.freenode.net 001 terminaltest :Welcome to the freenode Internet Relay Chat Network terminaltest:cherryh.freenode.net 002 terminaltest :Your host is cherryh.freenode.net[149.56.134.238/6667], running version ircd-seven-1.1.4uest :- global notices.:karatkievich.freenode.net NOTICE * :*** Looking up your hostname...:karatkievich.freenode.net NOTICE * :*** Checking Ident:karatkievich.freenode.net NOTICE * :*** Couldn't look up your hostname:karatkievich.freenode.net NOTICE * :*** No Ident response:karatkievich.freenode.net 001 terminaltest :Welcome to the freenode Internet Relay Chat Network terminaltestreasonable period of time, and we may request furthertkievich.freenode.net 372 terminaltest :-  PING :karatkievich.freenode.net:card.freenode.net NOTICE * :*** Looking up your hostname...:card.freenode.net NOTICE * :*** Checking Ident:card.freenode.net NOTICE * :*** No Ident response:card.freenode.net 001 terminaltest :Welcome to the freenode Internet Relay Chat Network terminaltest372 terminaltest :-  essage any of us at any time. Please note that freenode predominantly:card.freenode.net NOTICE * :*** Looking up your hostname...
+:card.freenode.net NOTICE * :*** Checking Ident
+:card.freenode.net NOTICE * :*** No Ident response
+:card.freenode.net 001 terminaltest :Welcome to the freenode Internet Relay Chat Network terminaltest
+372 terminaltest :-  
+essage any of us at any time. Please note that freenode predominantly
+:card.freenode.net NOTICE * :*** Looking up your hostname...
+:card.freenode.net NOTICE * :*** Checking Ident
+:card.freenode.net NOTICE * :*** No Ident response
+:card.freenode.net 001 terminaltest :Welcome to the freenode Internet Relay Chat Network terminaltest
+372 terminaltest :-  
+:card.freenode.net NOTICE * :*** Looking up your hostname...
+:card.freenode.net NOTICE * :*** Checking Ident
+:card.freenode.net NOTICE * :*** No Ident response
+:card.freenode.net 001 terminaltest :Welcome to the freenode Internet Relay Chat Network terminaltest
+372 terminaltest :-  
+:card.freenode.net NOTICE * :*** Looking up your hostname...
+:card.freenode.net NOTICE * :*** Checking Ident
+:card.freenode.net NOTICE * :*** No Ident response
+:card.freenode.net 001 terminaltest :Welcome to the freenode Internet Relay Chat Network terminaltest
+372 terminaltest :-  
+we would like to extend our

@@ -1,0 +1,46 @@
+package main
+
+import (
+	"fmt"
+	"irc-v2/ircutils"
+	"log"
+)
+
+func main() {
+	fmt.Println("Welcome to the irc testing program :D")
+	//ircutils.Example()
+	//log.Fatal("Stop here")
+	conn, err := ircutils.Connect("chat.freenode.net", "6667")
+	defer conn.Close()
+	if err != nil {
+		log.Fatal("Unable to connect ", err)
+	}
+	// two goroutines with channels (?)
+	// Receive and Send
+	// two channels receivebuffer and sendbuffer
+	messages := ircutils.NewMessageList()
+	for i:=0; i < 3; i++ {
+		line, err := ircutils.ReadLine(conn)
+		messages.PushBack(ircutils.NewMessage(line))
+		// maybe I should add the parse function to the Message object,
+		// parse function will return a ParsedMessage object, containing the fields
+		// (Tag), Prefix, Command, Params
+		if err != nil {
+			log.Fatal("Error Reading Line ", err)
+		}
+		fmt.Println(line)
+	}
+	msgs := messages.Poll()
+	for _, m := range msgs {
+		fmt.Printf("%d \n", m.GetTime())
+		ircutils.Parse(m.GetString()) // message needs to be converted to string
+		// fmt.Println(i, m)
+	}
+	//ircutils.Example()
+	
+	
+}
+
+// Connect, ReadLine, ParseMessage, RecordMessage
+// PollMessages
+
