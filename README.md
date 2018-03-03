@@ -1,10 +1,10 @@
 # IRC-v2 and ircutils
 
-*The IRC-v2 project consists of  an irc library called ircutils and a simple client.
+The IRC-v2 project consists of  an irc library called ircutils and a simple client.
 
-* The messages are parsed ysing a handwritten FSM.
+* The messages are parsed using a handwritten FSM.
 
-* The library also incorporates actions and events.
+* The library incorporates actions and events.
 
 # Status
 The parser and the network bits are stable, the UI architecture is still in development. The library may undergo some light changes. New features will be added. 
