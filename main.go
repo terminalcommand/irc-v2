@@ -24,7 +24,7 @@ func main() {
 
 	// Setting up the reader and the main program loop
 	reader := bufio.NewReader(conn) // reader for incoming messages, must be outside the loop
-	irchandler := ircutils.NewHandler(conn)
+	irchandler := ircutils.NewHandler(conn) // custom handler with embedding
 	for {
 		line, err := ircutils.ReadLine(reader)
 		messages.PushBack(ircutils.NewMessage(line)) // ReadLine and push it
@@ -33,7 +33,7 @@ func main() {
 		}
 		// Parse the last incoming message and act on it
 		irchandler.Act(ircutils.NewEvent(
-			ircutils.Parse(messages.PollLast().GetString())))
+			ircutils.ParseMsg(messages.PollLast())))
 		}
 }
 

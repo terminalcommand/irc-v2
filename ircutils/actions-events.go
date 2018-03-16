@@ -16,6 +16,9 @@ type Event struct {
 func NewEvent(m ParsedMessage) Event {
 	var action func(h *IRCHandler)
 	switch m.Command {
+	// instead of distinguishing between different messages at event dispatch
+	// I'm planning a lexing stage, where parsed messages will be categorized into their
+	// own data types, I will then use the type as the identifier	
 	case "001",  "003", "005", "253", "254", "255", "265", "266", "250":
 		//RPL_WELCOME, RPL_CREATED,  RPL_ISUPPORT, RPL_LUSERUNKNOWN
 		// RPL_LUSERCHANNELS, RPL_LUSERME, RPL_LOCALUSERS
@@ -121,7 +124,7 @@ func NewEvent(m ParsedMessage) Event {
 
 type IRCHandler struct {
 	conn net.Conn
-	w *tabwriter.Writer
+	w *tabwriter.Writer // no more tabwriter :)
 	// maybe add mesages
 }
 

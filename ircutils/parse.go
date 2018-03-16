@@ -8,13 +8,21 @@ import (
 	"io"
 	"strings"
 	"unicode"
+	"time"
 )
 
 type ParsedMessage struct {
-	msg Message
+	Msg Message // not used ??
 	Prefix string
 	Command string
 	Param []string
+	time time.Time
+}
+
+func ParseMsg(m Message) ParsedMessage {
+	parsed := Parse(m.GetString())
+	parsed.time = m.GetTime()
+	return parsed
 }
 
 func Parse(s string) ParsedMessage {
@@ -75,7 +83,7 @@ func Parse(s string) ParsedMessage {
 	}
 	return result // the end result as ParsedMessage
 }
-
+// ParsePrefix starts parsing after the initial : (colon), starting : (colon) is thereby ommited in the result
 func ParsePrefix(cursor *bufio.Reader) string {
 	var buffer string
 	for {
@@ -114,6 +122,7 @@ func ParseCommand(cursor *bufio.Reader) string {
 	return buffer
 }
 
+// ParseParameter results  include the starting : (colon) if provided
 func ParseParameter(cursor *bufio.Reader) []string {
 	var buffer []string
 	buffer = make([]string, 1)
