@@ -12,7 +12,6 @@ import (
 )
 
 type ParsedMessage struct {
-	Msg Message // not used ??
 	Prefix string
 	Command string
 	Param []string
