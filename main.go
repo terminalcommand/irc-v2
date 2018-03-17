@@ -32,8 +32,10 @@ func main() {
 			log.Fatal("Error Reading Line ", err)
 		}
 		// Parse the last incoming message and act on it
-		irchandler.Act(ircutils.NewEvent(
-			ircutils.ParseMsg(messages.PollLast())))
+		parsedm := ircutils.ParseMsg(messages.PollLast())
+		lexedm := ircutils.LexMsg(parsedm)
+		event := ircutils.NewEvent(lexedm)
+		irchandler.Act(event)
 		}
 }
 

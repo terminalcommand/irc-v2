@@ -12,6 +12,7 @@ import (
 )
 
 type ParsedMessage struct {
+	Raw string
 	Prefix string
 	Command string
 	Param []string
@@ -20,6 +21,7 @@ type ParsedMessage struct {
 
 func ParseMsg(m Message) ParsedMessage {
 	parsed := Parse(m.GetString())
+	parsed.Raw = m.GetString()
 	parsed.time = m.GetTime()
 	return parsed
 }

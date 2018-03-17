@@ -5,6 +5,7 @@ import (
 	"net"
 	"os"
 	"text/tabwriter"
+	"log"
 )
 
 type Event struct {
@@ -14,6 +15,25 @@ type Event struct {
 
 func elasticPrettyPrint(p LexedMessage) {
 	w := tabwriter.NewWriter(os.Stdout, 0, 0, 1, ' ', tabwriter.StripEscape)
+	fmt.Fprintln(w, "Type\t:", p.Type)
+	fmt.Fprintln(w, "Prefix\t:", p.Prefix)
+	fmt.Fprintln(w, "Command\t:", p.Command)
+	for i, j := range p.Param {
+		fmt.Fprintln(w, "Param ", i, " \t:", j)
+	}
+
+	for i, j := range p.Fields {
+		fmt.Fprintln(w, i, "\t:", j)
+	}
+	w.Flush()
+}
+func logToFile(p LexedMessage) {
+	f, err := os.OpenFile("logs.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	if err != nil {
+		log.Fatal(err)
+	}
+	w := tabwriter.NewWriter(f, 0, 0, 1, ' ', tabwriter.StripEscape)
+	fmt.Fprintln(w, "Raw\t:", p.Raw)
 	fmt.Fprintln(w, "Type\t:", p.Type)
 	fmt.Fprintln(w, "Prefix\t:", p.Prefix)
 	fmt.Fprintln(w, "Command\t:", p.Command)
@@ -38,9 +58,14 @@ func NewEvent(m LexedMessage) Event {
 		action = func(h *IRCHandler) {
 			elasticPrettyPrint(m)
 		}
+	case NOTICE:
+		action = func(h *IRCHandler) {
+			elasticPrettyPrint(m)
+		}
 	case UNDEFINED:
 		action = func(h *IRCHandler) {
 			elasticPrettyPrint(m)
+			logToFile(m)
 		}
 	}
 
