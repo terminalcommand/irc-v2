@@ -29,7 +29,6 @@ func LexMsg(m ParsedMessage) LexedMessage {
 		temp.time = m.time
 		temp.Raw = m.Raw
 
-
 		tempmap := make(map[string]string)
 		temp.Fields = tempmap
 		temp.Fields["client"] = temp.Prefix
@@ -58,6 +57,7 @@ func LexMsg(m ParsedMessage) LexedMessage {
 		}
 
 		return temp
+
 	case "NOTICE":
 		//NOTICE
 		temp := LexedMessage{}
