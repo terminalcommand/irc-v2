@@ -661,3 +661,568 @@ Command    : MODE
 Param  0   : terminaltest
 Param  1   : :+i
 
+Raw : :tolkien.freenode.net 002 terminaltest :Your host is tolkien.freenode.net[71.11.84.232/6667], running version ircd-seven-1.1.4
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 002
+Param  0   : terminaltest
+Param  1   : :Your host is tolkien.freenode.net[71.11.84.232/6667], running version ircd-seven-1.1.4
+
+Raw : :tolkien.freenode.net 003 terminaltest :This server was created Thu May 18 2017 at 17:43:36 UTC
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 003
+Param  0   : terminaltest
+Param  1   : :This server was created Thu May 18 2017 at 17:43:36 UTC
+
+Raw : :tolkien.freenode.net 004 terminaltest tolkien.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 004
+Param  0   : terminaltest
+Param  1   : tolkien.freenode.net
+Param  2   : ircd-seven-1.1.4
+Param  3   : DOQRSZaghilopswz
+Param  4   : CFILMPQSbcefgijklmnopqrstvz
+Param  5   : bkloveqjfI
+
+Raw : :tolkien.freenode.net 005 terminaltest CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+
+Type        : 0
+Prefix      : tolkien.freenode.net
+Command     : 005
+Param  0    : terminaltest
+Param  1    : CHANTYPES=#
+Param  2    : EXCEPTS
+Param  3    : INVEX
+Param  4    : CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz
+Param  5    : CHANLIMIT=#:120
+Param  6    : PREFIX=(ov)@+
+Param  7    : MAXLIST=bqeI:100
+Param  8    : MODES=4
+Param  9    : NETWORK=freenode
+Param  10   : STATUSMSG=@+
+Param  11   : CALLERID=g
+Param  12   : CASEMAPPING=rfc1459
+Param  13   : :are supported by this server
+
+Raw : :tolkien.freenode.net 005 terminaltest CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 SAFELIST ELIST=CTU KNOCK :are supported by this server
+
+Type        : 0
+Prefix      : tolkien.freenode.net
+Command     : 005
+Param  0    : terminaltest
+Param  1    : CHARSET=ascii
+Param  2    : NICKLEN=16
+Param  3    : CHANNELLEN=50
+Param  4    : TOPICLEN=390
+Param  5    : DEAF=D
+Param  6    : FNC
+Param  7    : TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR:
+Param  8    : EXTBAN=$,ajrxz
+Param  9    : CLIENTVER=3.0
+Param  10   : SAFELIST
+Param  11   : ELIST=CTU
+Param  12   : KNOCK
+Param  13   : :are supported by this server
+
+Raw : :tolkien.freenode.net 005 terminaltest WHOX ETRACE CPRIVMSG CNOTICE :are supported by this server
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 005
+Param  0   : terminaltest
+Param  1   : WHOX
+Param  2   : ETRACE
+Param  3   : CPRIVMSG
+Param  4   : CNOTICE
+Param  5   : :are supported by this server
+
+Raw : :tolkien.freenode.net 251 terminaltest :There are 122 users and 87924 invisible on 34 servers
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 251
+Param  0   : terminaltest
+Param  1   : :There are 122 users and 87924 invisible on 34 servers
+
+Raw : :tolkien.freenode.net 252 terminaltest 28 :IRC Operators online
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 252
+Param  0   : terminaltest
+Param  1   : 28
+Param  2   : :IRC Operators online
+
+Raw : :tolkien.freenode.net 253 terminaltest 27 :unknown connection(s)
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 253
+Param  0   : terminaltest
+Param  1   : 27
+Param  2   : :unknown connection(s)
+
+Raw : :tolkien.freenode.net 254 terminaltest 50843 :channels formed
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 254
+Param  0   : terminaltest
+Param  1   : 50843
+Param  2   : :channels formed
+
+Raw : :tolkien.freenode.net 255 terminaltest :I have 4358 clients and 1 servers
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 255
+Param  0   : terminaltest
+Param  1   : :I have 4358 clients and 1 servers
+
+Raw : :tolkien.freenode.net 265 terminaltest 4358 7644 :Current local users 4358, max 7644
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 265
+Param  0   : terminaltest
+Param  1   : 4358
+Param  2   : 7644
+Param  3   : :Current local users 4358, max 7644
+
+Raw : :tolkien.freenode.net 266 terminaltest 88046 97718 :Current global users 88046, max 97718
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 266
+Param  0   : terminaltest
+Param  1   : 88046
+Param  2   : 97718
+Param  3   : :Current global users 88046, max 97718
+
+Raw : :tolkien.freenode.net 250 terminaltest :Highest connection count: 7645 (7644 clients) (3519814 connections received)
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 250
+Param  0   : terminaltest
+Param  1   : :Highest connection count: 7645 (7644 clients) (3519814 connections received)
+
+Raw : :tolkien.freenode.net 375 terminaltest :- tolkien.freenode.net Message of the Day - 
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 375
+Param  0   : terminaltest
+Param  1   : :- tolkien.freenode.net Message of the Day - 
+
+Raw : :tolkien.freenode.net 372 terminaltest :- Welcome to freenode - supporting the free and open source
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- Welcome to freenode - supporting the free and open source
+
+Raw : :tolkien.freenode.net 372 terminaltest :- software communities since 1998.
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- software communities since 1998.
+
+Raw : :tolkien.freenode.net 372 terminaltest :-  
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :-  
+
+Raw : :tolkien.freenode.net 372 terminaltest :- By connecting to freenode you indicate that you have read and
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- By connecting to freenode you indicate that you have read and
+
+Raw : :tolkien.freenode.net 372 terminaltest :- accept our policies and guidelines as set out on https://freenode.net
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- accept our policies and guidelines as set out on https://freenode.net
+
+Raw : :tolkien.freenode.net 372 terminaltest :-  
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :-  
+
+Raw : :tolkien.freenode.net 372 terminaltest :- In the event that you observe behaviour that contravenes our policies,
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- In the event that you observe behaviour that contravenes our policies,
+
+Raw : :tolkien.freenode.net 372 terminaltest :- please notify a volunteer staff member via private message, or send us an
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- please notify a volunteer staff member via private message, or send us an
+
+Raw : :tolkien.freenode.net 372 terminaltest :- e-mail to complaints@freenode.net -- we will do our best to address the
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- e-mail to complaints@freenode.net -- we will do our best to address the
+
+Raw : :tolkien.freenode.net 372 terminaltest :- situation within a reasonable period of time, and we may request further
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- situation within a reasonable period of time, and we may request further
+
+Raw : :tolkien.freenode.net 372 terminaltest :- information or, as appropriate, involve other parties such as channel operators 
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- information or, as appropriate, involve other parties such as channel operators 
+
+Raw : :tolkien.freenode.net 372 terminaltest :- Group Contacts representing an on-topic group.
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- Group Contacts representing an on-topic group.
+
+Raw : :tolkien.freenode.net 372 terminaltest :-  
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :-  
+
+Raw : :tolkien.freenode.net 372 terminaltest :- freenode runs an open proxy scanner.
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- freenode runs an open proxy scanner.
+
+Raw : :tolkien.freenode.net 372 terminaltest :-  
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :-  
+
+Raw : :tolkien.freenode.net 372 terminaltest :- If you are looking for assistance, you will be able to find a list of
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- If you are looking for assistance, you will be able to find a list of
+
+Raw : :tolkien.freenode.net 372 terminaltest :- volunteer staff using the '/who freenode/staff/*' command, and you may
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- volunteer staff using the '/who freenode/staff/*' command, and you may
+
+Raw : :tolkien.freenode.net 372 terminaltest :- message any of us at any time. Please note that freenode predominantly
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- message any of us at any time. Please note that freenode predominantly
+
+Raw : :tolkien.freenode.net 372 terminaltest :- provides assistance via private message, and while we have a network
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- provides assistance via private message, and while we have a network
+
+Raw : :tolkien.freenode.net 372 terminaltest :- channel the primary venue for support requests is via private message to
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- channel the primary venue for support requests is via private message to
+
+Raw : :tolkien.freenode.net 372 terminaltest :- a member of the volunteer staff team.
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- a member of the volunteer staff team.
+
+Raw : :tolkien.freenode.net 372 terminaltest :-  
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :-  
+
+Raw : :tolkien.freenode.net 372 terminaltest :- From time to time, volunteer staff may send server-wide notices relating to
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- From time to time, volunteer staff may send server-wide notices relating to
+
+Raw : :tolkien.freenode.net 372 terminaltest :- the project, or the communities that we host. The majority of such notices
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- the project, or the communities that we host. The majority of such notices
+
+Raw : :tolkien.freenode.net 372 terminaltest :- will be sent as wallops, and you can '/mode <yournick> +w' to ensure that you
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- will be sent as wallops, and you can '/mode <yournick> +w' to ensure that you
+
+Raw : :tolkien.freenode.net 372 terminaltest :- do not miss them. Important messages relating to the freenode project, including
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- do not miss them. Important messages relating to the freenode project, including
+
+Raw : :tolkien.freenode.net 372 terminaltest :- notices of upcoming maintenance and other scheduled downtime will be issued as
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- notices of upcoming maintenance and other scheduled downtime will be issued as
+
+Raw : :tolkien.freenode.net 372 terminaltest :- global notices.
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- global notices.
+
+Raw : :tolkien.freenode.net 372 terminaltest :-  
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :-  
+
+Raw : :tolkien.freenode.net 372 terminaltest :- Representing an on-topic project? Don't forget to register, more information
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- Representing an on-topic project? Don't forget to register, more information
+
+Raw : :tolkien.freenode.net 372 terminaltest :- can be found on the https://freenode.net website under "Group Registration".
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- can be found on the https://freenode.net website under "Group Registration".
+
+Raw : :tolkien.freenode.net 372 terminaltest :-  
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :-  
+
+Raw : :tolkien.freenode.net 372 terminaltest :- freenode organises an annual conference, and we would like to extend our
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- freenode organises an annual conference, and we would like to extend our
+
+Raw : :tolkien.freenode.net 372 terminaltest :- thanks to the attendees, exhibitors and speakers who made freenode #live 2017
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- thanks to the attendees, exhibitors and speakers who made freenode #live 2017
+
+Raw : :tolkien.freenode.net 372 terminaltest :- possible. And of course, our generous sponsors: Bytemark, Canonical (Ubuntu),
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- possible. And of course, our generous sponsors: Bytemark, Canonical (Ubuntu),
+
+Raw : :tolkien.freenode.net 372 terminaltest :- Falanx Cyber Security, Private Internet Access and Yubico for footing the bill.
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- Falanx Cyber Security, Private Internet Access and Yubico for footing the bill.
+
+Raw : :tolkien.freenode.net 372 terminaltest :-  
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :-  
+
+Raw : :tolkien.freenode.net 372 terminaltest :- Thank you also to our server sponsors for the sustained support in keeping the
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- Thank you also to our server sponsors for the sustained support in keeping the
+
+Raw : :tolkien.freenode.net 372 terminaltest :- network going for close to two decades.
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- network going for close to two decades.
+
+Raw : :tolkien.freenode.net 372 terminaltest :-  
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :-  
+
+Raw : :tolkien.freenode.net 372 terminaltest :- freenode #live returns to Bristol, UK on November 3rd-4th 2018. Our Call for
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- freenode #live returns to Bristol, UK on November 3rd-4th 2018. Our Call for
+
+Raw : :tolkien.freenode.net 372 terminaltest :- Proposals is live at https://freenode.live and open until July 31, 2018. If 
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- Proposals is live at https://freenode.live and open until July 31, 2018. If 
+
+Raw : :tolkien.freenode.net 372 terminaltest :- you are interested in sponsoring this event, please send an e-mail to
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- you are interested in sponsoring this event, please send an e-mail to
+
+Raw : :tolkien.freenode.net 372 terminaltest :- sponsor@freenode.live
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- sponsor@freenode.live
+
+Raw : :tolkien.freenode.net 372 terminaltest :-  
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :-  
+
+Raw : :tolkien.freenode.net 372 terminaltest :- Thank you for using freenode!
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :- Thank you for using freenode!
+
+Raw : :tolkien.freenode.net 372 terminaltest :-  
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :-  
+
+Raw : :tolkien.freenode.net 372 terminaltest :-  
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 372
+Param  0   : terminaltest
+Param  1   : :-  
+
+Raw : :tolkien.freenode.net 376 terminaltest :End of /MOTD command.
+
+Type       : 0
+Prefix     : tolkien.freenode.net
+Command    : 376
+Param  0   : terminaltest
+Param  1   : :End of /MOTD command.
+
+Raw : :terminaltest MODE terminaltest :+i
+
+Type       : 0
+Prefix     : terminaltest
+Command    : MODE
+Param  0   : terminaltest
+Param  1   : :+i
+
+Raw : PING :tolkien.freenode.net
+
+Type   : 0
+Prefix : tolkien.freenode.net
+
+Command : PING

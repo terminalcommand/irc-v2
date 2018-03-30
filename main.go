@@ -5,7 +5,7 @@ import (
 	"log"
 	"bufio"
 )
- // stage some changes, merge problems
+
 func main() {
 	conn, err := ircutils.Connect("chat.freenode.net", "6667")
 	defer conn.Close()
