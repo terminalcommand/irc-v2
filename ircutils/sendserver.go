@@ -9,7 +9,6 @@ import (
 func SendServer(conn net.Conn, quitp chan bool) {
 	log.Println("Server listening on port 8081")
 	ln, err := net.Listen("tcp", ":8081")
-		
 	if err != nil {
 		log.Fatal("Cannot open a local port on 8081")
 	}

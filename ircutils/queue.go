@@ -5,7 +5,7 @@ import (
 	"time"
 	"log"
 )
-
+// embeds the doubly linked list from container/list
 type MessageList struct {
 	*list.List
 }

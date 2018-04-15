@@ -8,10 +8,10 @@ import (
 
 func main() {
 	conn, err := ircutils.Connect("chat.freenode.net", "6667")
-	defer conn.Close()
 	if err != nil {
 		log.Fatal("Unable to connect ", err)
 	}
+	defer conn.Close()
 
 	messages := ircutils.NewMessageList() // message store for all incoming msgs
 	quitp := make(chan bool) // channel to signal SendServer (tcp server for input) to stop
@@ -21,20 +21,21 @@ func main() {
 	// Login commands
 	conn.Write([]byte("NICK terminaltest\r\n")) 
 	conn.Write([]byte("USER terminaltest * 8 : terminal test\r\n"))
+	conn.Write([]byte("JOIN #haskell\r\n"))
 
 	// Setting up the reader and the main program loop
 	reader := bufio.NewReader(conn) // reader for incoming messages, must be outside the loop
-	irchandler := ircutils.NewHandler(conn) // custom handler with embedding
+	irchandler := ircutils.NewHandler(conn) // custom handler with embedding -- not implemented yet
 	for {
 		line, err := ircutils.ReadLine(reader)
-		messages.PushBack(ircutils.NewMessage(line)) // ReadLine and push it
 		if err != nil {
 			log.Fatal("Error Reading Line ", err)
 		}
+		messages.PushBack(ircutils.NewMessage(line)) // ReadLine and push it
 		// Parse the last incoming message and act on it
 		parsedm := ircutils.ParseMsg(messages.PollLast())
 		lexedm := ircutils.LexMsg(parsedm)
-		event := ircutils.NewEvent(lexedm)
+		event := ircutils.NewEvent(lexedm) // Maybe DispatchMsg
 		irchandler.Act(event)
 		}
 }

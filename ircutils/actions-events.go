@@ -13,7 +13,7 @@ type Event struct {
 	action func(h *IRCHandler) // need to change this to function
 }
 
-func elasticPrettyPrint(p LexedMessage) {
+func logToConsole(p LexedMessage) {
 	w := tabwriter.NewWriter(os.Stdout, 0, 0, 1, ' ', tabwriter.StripEscape)
 	fmt.Fprintln(w, "Type\t:", p.Type)
 	fmt.Fprintln(w, "Prefix\t:", p.Prefix)
@@ -21,10 +21,14 @@ func elasticPrettyPrint(p LexedMessage) {
 	for i, j := range p.Param {
 		fmt.Fprintln(w, "Param ", i, " \t:", j)
 	}
-
 	for i, j := range p.Fields {
 		fmt.Fprintln(w, i, "\t:", j)
 	}
+	w.Flush()
+}
+func printMessage(client string, text string) {
+	w := tabwriter.NewWriter(os.Stdout, 0, 0, 1, ' ', tabwriter.StripEscape)
+	fmt.Fprintln(w, client+"\t ", text)
 	w.Flush()
 }
 func logToFile(p LexedMessage) {
@@ -49,22 +53,39 @@ func logToFile(p LexedMessage) {
 
 
 func NewEvent(m LexedMessage) Event {
+	// feel free to write up your own NewEvent function or change this function
+	// to add/change the behaviour of your IRC Client
 	var action func(h *IRCHandler)
 	switch m.Type {
 	// instead of distinguishing between different messages at event dispatch
 	// I'm planning a lexing stage, where parsed messages will be categorized into their
-		// own data types, I will then use the type as the identifier
+	// own data types, I will then use the type as the identifier
+	// Edit I think I've had accomplished this. Comment above doesn't make sense now :)
 	case RPL_WELCOME:
 		action = func(h *IRCHandler) {
-			elasticPrettyPrint(m)
+			printMessage(m.Fields["server"], m.Fields["message"])
 		}
 	case NOTICE:
 		action = func(h *IRCHandler) {
-			elasticPrettyPrint(m)
+			printMessage(m.Fields["server"], m.Fields["text"])
 		}
+	case PING:
+		action = func(h *IRCHandler) {
+			//elasticPrettyPrint(m)
+			h.conn.Write([]byte("PONG :"+m.Fields["server"]))
+		}
+	case PRIVMSG:
+		action = func(h *IRCHandler) {
+			printMessage(m.Fields["server"], m.Fields["text"])	
+		}
+	case RPL_TOPIC:
+		action = func(h *IRCHandler) {
+			printMessage(m.Fields["channel"], m.Fields["topic"])	
+		}
+
+	
 	case UNDEFINED:
 		action = func(h *IRCHandler) {
-			elasticPrettyPrint(m)
 			logToFile(m)
 		}
 	}
@@ -81,5 +102,9 @@ func NewHandler(conn net.Conn) IRCHandler {
 }
 
 func (h *IRCHandler) Act(e Event) {
-	e.action(h)
+	if e.action != nil {
+		e.action(h)
+	} else {
+		fmt.Println("Encountered a strange error: action of an event is nil")
+	}
 }
