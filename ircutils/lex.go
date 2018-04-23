@@ -21,6 +21,10 @@ type LexedMessage struct {
 }
 
 func (m *ParsedMessage) initParsedMsg(t int) LexedMessage {
+	// converts a ParsedMessage into a LexedMessage
+	// initializes a new LexedMessage
+	// copies all values from the ParsedMessage into the
+	// newly initialized LexedMessage
 	temp := LexedMessage{}
 	temp.Type = t
 	temp.Prefix = m.Prefix
